@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nkechinyere Nwanganga - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development course assignment portal by Nkechinyere Nwanganga" />
+    <meta name="author" content="Nkechinyere Nwanganga" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Embed Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet" />
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <header>
+            <img src="images/nkechi-pics.webp" alt="Profile Photo" id="profile-photo">
+            <span id="name">Nkechinyere Nwanganga</span>
+        </header>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="https://github.com/Nkechiyere">GitHub Profile</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/">LinkedIn</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="sections-container">
+            <section class="card activities">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li><a href="#">Activity 1</a></li>
+                    <li><a href="#">Activity 2</a></li>
+                    <li><a href="#">Activity 3</a></li>
+                    <li><a href="#">Activity 4</a></li>
+                </ul>
+            </section>
+
+            <section class="card abia">
+                <h2>Information</h2>
+                <p>Weather:</p>
+                <p>Visits: </p>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Nkechinyere Onyekwere, Abia State, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>

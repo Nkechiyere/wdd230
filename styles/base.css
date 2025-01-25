@@ -1,0 +1,135 @@
+/* Base CSS for Mobile-First Layout */
+
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #152D42;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-weight: 100;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: black;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul.show {
+    display: flex; /* Show on toggle */
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a.active {
+    background-color: #444;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  .menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-photo {
+    width: 7%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .activities {
+    flex: 2;
+    border: 3px solid rgba(3, 1, 27, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+
+}
+.abia {
+    flex: 1;
+    border: 3px solid rgba(3, 1, 27, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
+}
+  .sections-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .section {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #152D42;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
