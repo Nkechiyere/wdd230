@@ -6,7 +6,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        }
+    }
 
 
     .menu-toggle {
@@ -26,12 +26,14 @@
         box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
 
     }
+
     .abia {
         border: 3px solid rgba(3, 1, 27, 0.2);
         border-radius: 12px;
         box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
     }
 }
+
 /* Large Screens Layout (min-width 1024px) */
 @media (min-width: 1024px) {
     .sections-container {

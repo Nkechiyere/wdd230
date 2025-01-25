@@ -1,0 +1,121 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and basic layout */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Header and Logo */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #006400; /* Deep Green */
+    color: #fff;
+  }
+  
+  header .logo h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+  }
+  
+  /* Mobile Hamburger Menu */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-toggle .bar {
+    background-color: #fff;
+    height: 4px;
+    width: 100%;
+  }
+  
+  /* Mobile Navigation Menu */
+  .navbar {
+    display: none; /* Hidden by default on mobile */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+  }
+  
+  .navbar ul li {
+    margin: 10px 0;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Section Styling */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: #006400; /* Green */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #006400;
+    color: #fff;
+  }
+  
+  /* Media Query for Tablets and Larger Screens */
+  @media (min-width: 768px) {
+    /* Show the navigation menu on larger screens */
+    .navbar {
+      display: block;
+    }
+  
+    .navbar ul {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 10px;
+    }
+  
+    .menu-toggle {
+      display: none; /* Hide hamburger menu on larger screens */
+    }
+  }
+  
+  /* Media Query for Desktop */
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .navbar ul li a {
+      font-size: 1.5rem;
+    }
+  }
+  
