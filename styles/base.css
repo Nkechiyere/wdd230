@@ -8,128 +8,161 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-  }
-  
-  header {
+}
+
+
+/* Dark mode */
+#mode {
+	position: absolute;
+	top: 0.5rem;
+	right: 1.5rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+header {
     background-color: #152D42;
     color: white;
     padding: 20px;
     text-align: center;
-  }
-  
-  header .profile-container {
+}
+
+header .profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .profile-img {
+}
+
+.profile-img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-bottom: 10px;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-weight: 100;
     margin: 0;
     font-size: 1.5rem;
+}
+
+/*hamberger menu*/
+.menu-toggle {
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+
+#navbar {
+    display: none;
+}
+
+#navbar.open {
+    display: block;  /* Show the menu when the 'open' class is added */
   }
-  
-  /* Navigation Styles */
-  nav {
+/* Navigation Styles */
+nav {
     background-color: black;
     margin: 0 auto;
     max-width: 800px;
+}
+
+a {
+    text-decoration: none; /* Remove the default underline */
   }
-  
-  nav ul {
+
+nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
     margin: 0;
-  }
-  
-  nav ul.show {
-    display: flex; /* Show on toggle */
-  }
-  
-  nav ul li {
+}
+
+nav ul.show {
+    display: flex;
+    /* Show on toggle */
+}
+
+nav ul li {
     list-style: none;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
     padding: 15px;
     display: block;
     font-weight: bold;
     transition: background-color 0.3s ease;
-  }
-  
-  nav ul li a.active {
+}
+
+nav ul li a.active {
     background-color: #444;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     background-color: #555;
-  }
-  
-  .menu-toggle {
+}
+
+.menu-toggle {
     background-color: transparent;
     border: none;
     color: white;
     font-size: 2rem;
     cursor: pointer;
     display: block;
-  }
-  
-  /* Main Content */
-  main {
+}
+
+/* Main Content */
+main {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  #profile-photo {
+#profile-photo {
     width: 7%;
     height: auto;
     border-radius: 20px;
-  }
-  
-  .activities {
+}
+
+.activities {
     flex: 2;
     border: 3px solid rgba(3, 1, 27, 0.2);
     border-radius: 12px;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
 
 }
+
 .abia {
     flex: 1;
     border: 3px solid rgba(3, 1, 27, 0.2);
     border-radius: 12px;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.5);
 }
-  .sections-container {
+
+.sections-container {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-  }
-  
-  .section {
+}
+
+.section {
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-  }
-  
-  footer {
+}
+
+footer {
     background-color: #152D42;
     color: white;
     text-align: center;
     padding: 20px;
-  }
-  
+}

@@ -7,10 +7,13 @@
         flex-direction: row;
         justify-content: space-between;
     }
-
-
     .menu-toggle {
-        display: none;
+        display: none; /* Hide hamburger button on desktop and larger */
+    }
+    
+    #navbar {
+        display: block; /* Menu is always visible on larger screens */
+        
     }
 
     /* Sections Layout: Display sections side by side */
