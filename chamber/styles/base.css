@@ -1,0 +1,164 @@
+/* Normalize CSS */
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+    color: #006400; /* Deep Green */
+}
+
+a {
+    color: #FF8C00; /* Orange */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cc7000; /* Darker Orange for hover */
+}
+
+/* Header */
+header {
+    background-color: #006400; /* Deep Green */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-left img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.header-text {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.header-text span {
+    display: block;
+}
+
+/* Navigation */
+nav {
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+}
+
+nav ul.active {
+    display: flex; /* Show when active */
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #006400; /* Deep Green */
+}
+
+nav ul li a:hover {
+    color: #FF8C00; /* Orange */
+}
+
+#hamburger-menu {
+    display: block; /* Show hamburger menu on mobile */
+    background-color: #006400; /* Deep Green */
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FF8C00; /* Orange */
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #cc7000; /* Darker Orange */
+}
+
+/* Sections */
+.events, .weather, .spotlights {
+    padding: 1rem;
+    text-align: center;
+}
+
+.weather-card {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.spotlight {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #006400; /* Deep Green */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #FF8C00; /* Orange */
+}
+
+footer a:hover {
+    color: #cc7000; /* Darker Orange */
+}

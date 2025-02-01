@@ -1,0 +1,51 @@
+/* Navigation for Larger Screens */
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    flex-direction: row;
+    align-items: center;
+}
+.header-left img {
+    margin-right: 1rem;
+}
+
+#hamburger-menu {
+    display: none; /* Hide hamburger menu on larger screens */
+}
+
+.header-text {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-text span {
+    margin-right: 0.5rem;
+}
+
+nav ul {
+    display: flex; /* Show navigation links */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.hero img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Sections */
+.events, .weather, .spotlights {
+    padding: 2rem;
+}
+
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
