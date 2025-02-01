@@ -16,12 +16,12 @@ h1, h2, h3 {
 }
 
 a {
-    color: #FF8C00; /* Orange */
+    color: #000080; /* Orange */
     text-decoration: none;
 }
 
 a:hover {
-    color: #cc7000; /* Darker Orange for hover */
+    color: #0b082b; /* Darker Orange for hover */
 }
 
 /* Header */
@@ -82,22 +82,27 @@ nav ul li {
 nav ul li a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: #006400; /* Deep Green */
+    color: #004d00; /* Dark Green */
 }
 
 nav ul li a:hover {
-    color: #FF8C00; /* Orange */
+    color: #003d7a; /* Darker Blue */
 }
 
 #hamburger-menu {
     display: block; /* Show hamburger menu on mobile */
-    background-color: #006400; /* Deep Green */
+    background-color: #004d00; /* Dark Green */
     color: white;
     border: none;
     padding: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+#hamburger-menu.open {
+    content: '✖'; /* X symbol */
+}
+
 
 /* Hero Section */
 .hero {
@@ -115,7 +120,7 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FF8C00; /* Orange */
+    background-color: #000080; /* Orange */
     color: white;
     padding: 1rem 2rem;
     font-size: 1.2rem;
@@ -124,7 +129,7 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #cc7000; /* Darker Orange */
+    background-color: #0b082b; /* Darker Orange */
 }
 
 /* Sections */
@@ -156,9 +161,9 @@ footer {
 }
 
 footer a {
-    color: #FF8C00; /* Orange */
+    color: #0b082b; /* Orange */
 }
 
 footer a:hover {
-    color: #cc7000; /* Darker Orange */
+    color: #0b082b; /* Darker Orange */
 }

@@ -9,6 +9,7 @@ header {
     flex-direction: row;
     align-items: center;
 }
+
 .header-left img {
     margin-right: 1rem;
 }
@@ -26,7 +27,9 @@ header {
 .header-text span {
     margin-right: 0.5rem;
 }
-
+nav {
+    width: 70%;
+}
 nav ul {
     display: flex; /* Show navigation links */
     flex-direction: row;
