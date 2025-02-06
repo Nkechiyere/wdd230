@@ -58,9 +58,20 @@
     </nav>
 
     <main>
+
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/salt_lake_temple_lds_hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/salt_lake_temple_lds_hero-medium.webp" media="(max-width: 800px)">
+                <img src="images/salt_lake_temple_lds_hero-large.webp" alt="Hero Image" width="1500" height="750" class="responsive-image" loading="lazy">
+            </picture>
+            <div class="overlay">Salt Lake Temple</div>
+        </div>
         <div id="mode">
+
             🕶️
         </div>
+
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="sections-container">
             <section class="card activities">
@@ -68,16 +79,20 @@
                 <ul>
                     <li>Activity 1</li>
                     <li>Activity 2</li>
-                    <li>Activity 3</li>
+                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading</a> | <a href="week03/responsive-images.html">Responsive Images</a></li>
                     <li>Activity 4</li>
                 </ul>
             </section>
 
             <section class="card abia">
                 <h2>Information</h2>
-                <p>Weather:</p>
-                <p>Visits: </p>
+                <p>Weather: 76°F - Sunshine</p>
+                <p>Visits: <span id="visit-count">0</span> </p>
             </section>
+        </div>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9451.277314397277!2d7.3419721769661805!3d5.140273724860495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10429b0040bb9f23%3A0x159e258413987e73!2sAba%20Abia%20state!5e0!3m2!1sen!2sng!4v1738781310569!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
 
