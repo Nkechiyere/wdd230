@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aba Chamber of Commerce</title>
+    <meta name="description"
+        content="Aba Chamber of Commerce to foster economic growth, connect with local businesses, and access resources for business development in Aba.">
+    <meta name="author" content="Nkechinyere Nwanganga">
+
+    <!-- Social Media Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nkechiyere">
+    <meta name="twitter:creator" content="@nkechiyere">
+    <meta property="og:title" content="Aba Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/nkechiyere/wdd230/chamber/images/aba-hero.webp">
+    <meta property="og:url" content="https://nkechiyere.github.io/wdd230/chamber/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="Aba Chamber of Commerce Logo">
+            <h1 class="header-text">Aba Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="hamburger-menu">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="discover-grid">
+        <aside class="sidebar">
+            <div id="visit-message"></div>
+            <section class="demographics">
+                <h2>Aba Demographics</h2>
+                <ul>
+                    <li>Population: 1.2 million</li>
+                    <li>Business Districts: 5</li>
+                    <li>Markets: 12 major markets</li>
+                    <li>Manufacturing Hubs: 3</li>
+                </ul>
+            </section>
+            <section class="events">
+                <h2>Upcoming Events</h2>
+                <div class="event-item">
+                    <h3>Trade Fair 2024</h3>
+                    <p>Annual showcase of Aba-made products</p>
+                    <p>Date: August 15-20, 2024</p>
+                </div>
+            </section>
+            <section class="calendar">
+                <h2>Business Calendar</h2>
+                <div class="calendar-widget">
+                    <!-- Calendar content -->
+                </div>
+            </section>
+        </aside>
+
+        <section class="gallery">
+            <figure>
+                <img class="hover" data-src="images/image2.webp" loading="lazy" width="800" height="600" alt="Ariaria International Market">
+                <figcaption>Ariaria International Market - West Africa's Largest Market</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" data-src="images/image3.webp" loading="lazy" width="800" height="600" alt="Aba Leather Works">
+                <figcaption>Famous Aba Leather Works - Quality Shoes and Bags</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" data-src="images/image5.webp" loading="lazy" width="800" height="600" alt="Aba Textile Market">
+                <figcaption>Aba Textile Market - Fashion Hub</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" data-src="images/image7.webp" loading="lazy" width="800" height="600" alt="Aba City Center">
+                <figcaption>Aba City Center - Commercial Heart</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" data-src="images/image9.webp" loading="lazy" width="800" height="600" alt="Manufacturing District">
+                <figcaption>Manufacturing District - Industrial Innovation</figcaption>
+            </figure>
+            <figure>
+                <img class="hover" data-src="images/image1.webp" loading="lazy" width="800" height="600" alt="Aba Cultural Center">
+                <figcaption>Aba Cultural Center - Heritage Hub</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Aba Chamber of Commerce | Nkechinyere Nwanganga | WDD 230 Project
+        </p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>Contact: info@abachamber.com | +234 123 4567</p>
+        <p>📍 Location: 123 Market Street, Aba, Nigeria</p>
+    </footer>
+    <script src="scripts/discover.js"></script>
+</body>
+
+</html> 

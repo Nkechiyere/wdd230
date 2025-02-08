@@ -64,6 +64,22 @@
         width: 100%;
         height: 450px;
     }
+
+    /* discover layout */
+    .discover-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr; /* Sidebar and gallery side by side */
+        gap: 30px;
+    }
+
+    .sidebar {
+        order: 1; /* Sidebar on the left */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    }
+    
 }
 
 /* Large Screens Layout (min-width 1024px) */
@@ -98,5 +114,11 @@
     iframe {
         width: 100%;
         height: 450px;
+    }
+    
+    /* discover layout */
+    .discover-grid {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }

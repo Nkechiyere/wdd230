@@ -157,12 +157,45 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
+/* discover layout */
 
+.discover-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.sidebar {
+    order: 2; /* Sidebar below the gallery on mobile */
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* END discover layout */
 .map-container {
     width: 100%;
     max-width: 960px;
     margin: 20px auto;
 }
+
 
 iframe {
     width: 100%;
