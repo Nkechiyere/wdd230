@@ -2,18 +2,19 @@
 
 /* Mobile Menu */
 @media (min-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .menu-toggle {
+    /* Make the selector more specific */
+    header .menu-toggle {
         display: none; /* Hide hamburger button on desktop and larger */
     }
     
     #navbar {
-        display: block; /* Menu is always visible on larger screens */
-        
+        display: block !important; /* Force menu to show on larger screens */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     /* Sections Layout: Display sections side by side */

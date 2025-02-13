@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <meta name="description" content="Form Validation">
+    <meta name="author" content="Nkechinyere Nwanganga">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="keywords" content="Form Validation, Web Form, User Form">
+    <meta name="copyright" content="© 2025 Nkechinyere Nwanganga, Abia State, Nigeria">
+
+    <!-- Essential META Tags -->
+    <meta property="og:title" content="Form Validation">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/nkechiyere/wdd230/images/nkechi-pics.webp">
+    <meta property="og:url" content="https://nkechiyere.github.io/wdd230/form.html">
+
+    <!-- social media META Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nkechiyere">
+    <meta name="twitter:creator" content="@nkechiyere">
+    <meta name="twitter:title" content="Form Validation">
+    <meta name="twitter:description" content="Form Validation">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/nkechiyere/wdd230/images/nkechi-pics.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Embed Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/nkechi-pics.webp" alt="Profile Photo" id="profile-photo">
+        <span id="name">Nkechinyere Nwanganga</span>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://github.com/Nkechiyere">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="formmessage"></div>
+        <h1>Web Form</h1>
+        <form action="record.html" method="get" id="userForm">
+            <p class="smaller">* Required fields</p>
+            
+            <div class="form-group">
+                <label for="username" class="req">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="req">Password</label>
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       pattern="^[a-zA-Z0-9]{8,}$" 
+                       title="Password must be at least 8 characters long and contain only letters and numbers"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password" class="req">Confirm Password</label>
+                <input type="password" 
+                       id="confirm-password" 
+                       name="confirm-password" 
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="req">Email</label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                       title="Please enter a valid BYUI email address (e.g., student@byui.edu)"
+                       placeholder="example@byui.edu"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Page Rating: <span id="rating-value">5</span></label>
+                <input type="range" 
+                       id="rating" 
+                       name="rating" 
+                       min="1" 
+                       max="10" 
+                       step="1" 
+                       value="5">
+            </div>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> Nkechinyere Nwanganga, Abia State, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>

@@ -49,20 +49,25 @@ h1 {
 
 /*hamberger menu*/
 .menu-toggle {
-    width: 25px;
-    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
     cursor: pointer;
-    display: none;
-    float: right;
+    display: block; /* Show by default on mobile */
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 #navbar {
-    display: none;
+    display: none; /* Hidden by default on mobile */
 }
 
 #navbar.open {
-    display: block;  /* Show the menu when the 'open' class is added */
-  }
+    display: block;
+}
+
 /* Navigation Styles */
 nav {
     background-color: black;
@@ -106,15 +111,6 @@ nav ul li a.active {
 
 nav ul li a:hover {
     background-color: #555;
-}
-
-.menu-toggle {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    display: block;
 }
 
 /* Main Content */
