@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Aba Chamber of Commerce</title>
+    <meta name="description"
+        content="Join the Aba Chamber of Commerce to connect with local businesses and access valuable resources for business development.">
+    <meta name="author" content="Nkechinyere Nwanganga">
+
+    <!-- Social Media Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nkechiyere">
+    <meta name="twitter:creator" content="@nkechiyere">
+    <meta property="og:title" content="Aba Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/nkechiyere/wdd230/chamber/images/aba-hero.webp">
+    <meta property="og:url" content="https://nkechiyere.github.io/wdd230/chamber/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="Aba Chamber of Commerce Logo">
+            <h1 class="header-text">Aba Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="hamburger-menu">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-main">
+        <h1>Join the Chamber</h1>
+        
+        <div class="join-container">
+            <form method="get" action="thankyou.html" class="join-form" id="joinForm">
+                <h2>Membership Application</h2>
+                
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="firstname">First Name *</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name *</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Business Position Title</label>
+                    <input type="text" 
+                           id="title" 
+                           name="title" 
+                           pattern="[A-Za-z\s-]{7,}"
+                           title="Please enter at least 7 characters using only letters, hyphens, and spaces">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           placeholder="example@business.com" 
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Mobile Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="business">Business/Organization Name *</label>
+                    <input type="text" id="business" name="business" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="membership">Membership Level *</label>
+                    <select id="membership" name="membership" required>
+                        <option value="">Please Select</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Business Description</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <div class="membership-levels">
+                <h2>Membership Levels</h2>
+                
+                <div class="level">
+                    <h3>NP Membership</h3>
+                    <p class="price">Free</p>
+                    <ul>
+                        <li>For Non-Profit Organizations</li>
+                        <li>Basic Directory Listing</li>
+                        <li>Newsletter Subscription</li>
+                    </ul>
+                </div>
+
+                <div class="level">
+                    <h3>Bronze Membership</h3>
+                    <p class="price">₦50,000/year</p>
+                    <ul>
+                        <li>Enhanced Directory Listing</li>
+                        <li>Social Media Mentions</li>
+                        <li>Event Discounts (10%)</li>
+                    </ul>
+                </div>
+
+                <div class="level">
+                    <h3>Silver Membership</h3>
+                    <p class="price">₦100,000/year</p>
+                    <ul>
+                        <li>All Bronze Benefits</li>
+                        <li>Business Spotlight Feature</li>
+                        <li>Event Discounts (25%)</li>
+                        <li>Quarterly Training Sessions</li>
+                    </ul>
+                </div>
+
+                <div class="level">
+                    <h3>Gold Membership</h3>
+                    <p class="price">₦200,000/year</p>
+                    <ul>
+                        <li>All Silver Benefits</li>
+                        <li>Premium Directory Placement</li>
+                        <li>Monthly Business Feature</li>
+                        <li>Event Discounts (50%)</li>
+                        <li>Exclusive Networking Events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Aba Chamber of Commerce | Nkechinyere Nwanganga | WDD 230 Project
+        </p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>Contact: info@abachamber.com | +234 123 4567</p>
+        <p>📍 Location: 123 Market Street, Aba, Nigeria</p>
+    </footer>
+    <script src="scripts/scripts.js" defer></script>
+    </script>
+</body>
+
+</html>

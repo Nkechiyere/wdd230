@@ -77,4 +77,59 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+
+    /* Join Page */
+    .join-main {
+        padding: 2rem;
+        max-width: 1200px;
+    }
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+    }
+
+    .join-form {
+        padding: 2rem;
+    }
+
+    .membership-levels {
+        padding: 2rem;
+    }
+
+    .level h3 {
+        font-size: 1.25rem;
+    }
+
+    .price {
+        font-size: 1.25rem;
+    }
+
+    .level li {
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        width: auto;
+        padding: 0.75rem 2rem;
+    }
+
+    .thankyou-main {
+        padding: 4rem 2rem;
+        max-width: 800px;
+    }
+
+    .thankyou-main h1 {
+        font-size: 2rem;
+    }
+
+    .thankyou-main p {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+    
 }

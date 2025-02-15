@@ -261,3 +261,279 @@ footer a:hover {
         min-height: 400px;
     }
 }
+
+/* Join Page Styles */
+.join-main {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.join-form {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    order: 1; /* Show form first on mobile */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.membership-levels {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    order: 2; /* Show membership levels after form on mobile */
+}
+
+.level {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.level h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #2c5282;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.level ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.level li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background: #006400;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #004d00;
+}
+
+/* Thank You Page Styles - Mobile First */
+.thankyou-main {
+    padding: 1rem;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thankyou-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.thankyou-content h1 {
+    color: #006400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.confirmation-message {
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-message p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.next-steps {
+    text-align: left;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.next-steps h2 {
+    font-size: 1.1rem;
+    color: #006400;
+    margin-bottom: 0.75rem;
+}
+
+.next-steps ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.next-steps li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.next-steps li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #006400;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.button.primary {
+    background: #006400;
+    color: white;
+}
+
+.button.secondary {
+    background: #f8f9fa;
+    color: #006400;
+    border: 1px solid #006400;
+}
+
+.button.primary:hover {
+    background: #004d00;
+}
+
+.button.secondary:hover {
+    background: #e9ecef;
+}
+
+/* Larger Screen Styles */
+@media (min-width: 768px) {
+    .join-main {
+        padding: 2rem;
+        max-width: 1200px;
+    }
+
+    .join-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+    }
+
+    .join-form {
+        padding: 2rem;
+    }
+
+    .membership-levels {
+        padding: 2rem;
+    }
+
+    .level h3 {
+        font-size: 1.25rem;
+    }
+
+    .price {
+        font-size: 1.25rem;
+    }
+
+    .level li {
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        width: auto;
+        padding: 0.75rem 2rem;
+    }
+
+    .thankyou-content {
+        padding: 2.5rem;
+        max-width: 600px;
+    }
+
+    .thankyou-content h1 {
+        font-size: 2rem;
+    }
+
+    .confirmation-message p {
+        font-size: 1rem;
+    }
+
+    .next-steps {
+        padding: 1.5rem;
+    }
+
+    .next-steps h2 {
+        font-size: 1.25rem;
+    }
+
+    .next-steps li {
+        font-size: 1rem;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .button {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+    }
+}
