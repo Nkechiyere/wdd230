@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory - Aba Chamber of Commerce</title>
+    <meta name="description" content="Directory of business members of the Aba Chamber of Commerce">
+    <meta name="author" content="Nkechinyere Nwanganga">
+
+    <!-- Social Media Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nkechiyere">
+    <meta name="twitter:creator" content="@nkechiyere">
+    <meta property="og:title" content="Aba Chamber of Commerce">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="Aba Chamber of Commerce Logo">
+            <h1 class="header-text">Aba Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="hamburger-menu">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="directory-main">
+        <h1>Business Directory</h1>
+        
+        <div class="view-toggle">
+            <button id="grid-view" class="active" title="Grid View">
+                <span class="material-icons">grid_view</span>
+            </button>
+            <button id="list-view" title="List View">
+                <span class="material-icons">view_list</span>
+            </button>
+        </div>
+
+        <div class="members-container grid">
+            <!-- Member cards will be inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Aba Chamber of Commerce | Nkechinyere Nwanganga | WDD 230 Project</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>Contact: info@abachamber.com | +234 123 4567</p>
+        <p>📍 Location: 123 Market Street, Aba, Nigeria</p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/directory.js"></script>
+</body>
+</html> 

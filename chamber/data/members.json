@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Aba Textile Hub",
+      "address": "123 Market Road, Aba",
+      "phone": "+234 803 123 4567",
+      "website": "https://abatextilehub.com",
+      "image": "images/comlogo.webp",
+      "membershipLevel": "Gold",
+      "description": "Leading textile manufacturer and distributor in Aba"
+    },
+    {
+      "name": "Green Farms Aba",
+      "address": "45 Asa Road, Aba",
+      "phone": "+234 805 234 5678",
+      "website": "https://greenfarmsaba.com",
+      "image": "images/comlogo.webp",
+      "membershipLevel": "Silver",
+      "description": "Organic produce and sustainable farming"
+    },
+    {
+      "name": "Ariaria Market Association",
+      "address": "1 Ariaria Market Road, Aba",
+      "phone": "+234 806 345 6789",
+      "website": "https://ariariamarket.org",
+      "image": "images/comlogo.webp",
+      "membershipLevel": "Gold",
+      "description": "Largest market association in Eastern Nigeria"
+    },
+    {
+      "name": "Aba Tech Hub",
+      "address": "78 Faulks Road, Aba",
+      "phone": "+234 807 456 7890",
+      "website": "https://abatechhub.com",
+      "image": "images/comlogo.webp",
+      "membershipLevel": "Silver",
+      "description": "Innovation and technology center"
+    },
+    {
+      "name": "Crown Leather Works",
+      "address": "234 Factory Road, Aba",
+      "phone": "+234 808 567 8901",
+      "website": "https://crownleather.com",
+      "image": "images/comlogo.webp",
+      "membershipLevel": "Gold",
+      "description": "Premium leather goods manufacturer"
+    },
+    {
+      "name": "Unity Bank Aba",
+      "address": "56 Aba-Owerri Road, Aba",
+      "phone": "+234 809 678 9012",
+      "website": "https://unitybank.com",
+      "image": "images/comlogo.webp",
+      "membershipLevel": "Gold",
+      "description": "Financial services and banking"
+    },
+    {
+      "name": "Aba Breweries",
+      "address": "89 Industrial Area, Aba",
+      "phone": "+234 802 789 0123",
+      "website": "https://ababreweries.com",
+      "image": "images/comlogo.webp",
+      "membershipLevel": "Silver",
+      "description": "Local beverage manufacturer"
+    }
+  ]
+} 
