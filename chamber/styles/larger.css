@@ -131,5 +131,53 @@
     .button {
         font-size: 1rem;
     }
-    
+    .weather {
+        margin: 1.5rem auto;
+        max-width: 600px;
+    }
+
+    .current-weather {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.5rem;
+        align-items: center;
+        text-align: left;
+        padding: 1.5rem;
+    }
+
+    .current-weather img {
+        grid-row: span 2;
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+    .weather {
+        max-width: 800px;
+        margin: 2rem auto;
+    }
+
+    .current-weather {
+        grid-template-columns: auto 1fr auto;
+    }
+
+    .current-weather .temp {
+        font-size: 3rem;
+    }
+
+    .forecast-day {
+        padding: 1rem;
+    }
+
+    .forecast-day .temp {
+        font-size: 1.25rem;
+    }
 }
