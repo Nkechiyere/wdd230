@@ -222,8 +222,9 @@ iframe {
 .sections-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1200px;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
 }
 
 .section {
@@ -239,3 +240,61 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* Card Styles */
+.sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: #152D42;
+    color: white;
+    margin: 0;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Learning Activities Card */
+.activities ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.activities li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.activities a {
+    color: #152D42;
+    text-decoration: none;
+}
+
+.activities a:hover {
+    text-decoration: underline;
+}
+
+/* Information Card */
+.abia {
+    text-align: center;
+}
+
+.abia p {
+    margin: 0.8rem;
+    font-size: 1rem;
+}
+
+
